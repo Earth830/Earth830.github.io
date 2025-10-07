@@ -65,7 +65,7 @@ answers:
   - type: short_answer
     match:
       question_contains: "ชื่อเล่น"
-    value: "หวาย"
+    value: "สมชาย"
 
   # ===== ตัวอย่าง: Checkbox (ติ๊กหลายข้อ) =====
   - type: checkboxes
