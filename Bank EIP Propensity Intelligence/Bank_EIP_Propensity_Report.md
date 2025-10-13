@@ -71,11 +71,5 @@
 - **ความน่าเชื่อถือของคะแนน**: ECE อยู่ในเกณฑ์ → คะแนนใช้เป็น **probability of response** ได้โดยตรงในการจำลอง ROI  
 - **ธรรมาภิบาลโมเดล**: มี **Gate, Calibration, Fairness slice, PSI drift** สนับสนุนการใช้งานในโปรดักชันและการตรวจสอบย้อนหลัง
 
----
 
-## ข้อเสนอแนะสำหรับรอบถัดไป
-1. **ยกระดับโมเดล**: ทดลอง **meta‑stacking** (เช่น XGBoost + LightGBM) และ **dual calibration** (Isotonic + Beta‑logit) เพื่อเพิ่ม PR‑AUC และลด ECE ให้ต่ำกว่า 0.02 อย่างมั่นคง
-2. **Optimize Top‑K ทางเศรษฐศาสตร์**: กำหนด K โดยอิง **ต้นทุนต่อการติดต่อ × ปริมาณ** และ **มูลค่าเฉลี่ยต่อการตอบรับ** แทนการยึด 5% คงที่
-3. **Monitoring & Retraining**: ตั้งแดชบอร์ดสำหรับ **KPI Gate / PSI / Fairness** และกำหนดทริกเกอร์รีเทรนเมื่อ PSI เกินเกณฑ์หรือ ECE แย่ลง
-4. **Data & Feature**: เพิ่มฟีเจอร์พฤติกรรม/ธุรกรรมตามเวลา (rolling stats, recency‑frequency‑monetary), และจัดการความไม่สมดุลด้วย focal loss/weighting หากจำเป็น
 
