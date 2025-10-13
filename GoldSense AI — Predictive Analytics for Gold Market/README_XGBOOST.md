@@ -144,7 +144,7 @@ pip install xgboost scikit-learn pandas numpy matplotlib yfinance
 
 
 
-## 8) ข้อจำกัด & งานต่อยอด (Limitations & Next Steps)
+## 7) งานต่อยอด (Next Steps)
 - **สัญญาณเชิงเวลา**: ลองเพิ่ม lag/rolling features เพื่อให้โมเดลเห็นบริบทมากขึ้น
 - **การประเมิน**: เพิ่ม R²/MAPE, และใช้ **walk-forward** แทน random split เพื่อความสมจริง
 - **Explainability**: เพิ่ม **Feature Importance/SHAP** เพื่อสื่อสารเหตุผลเชิงธุรกิจ
