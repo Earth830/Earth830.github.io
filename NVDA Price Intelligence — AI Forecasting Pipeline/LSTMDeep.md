@@ -1,4 +1,4 @@
-# รีวิวเจาะลึกโน้ตบุ๊ก LSTM.ipynb (ภาษาไทย)
+# รีวิวเจาะลึกโน้ตบุ๊ก LSTM.ipynb 
 
 > บทบาท: Senior Data Scientist — อธิบายเชิงวิศวกรรม + ตีความผลลัพธ์ + คำแนะนำการปรับปรุง
 
@@ -189,8 +189,3 @@ plt.show()
 
 - **จุดแข็ง**: โครงสร้าง LSTM จับลำดับเวลาได้ดี, ผลลัพธ์ R² สูงมาก, residual โดยรวมสมดุล, โค้ด reproducible (ตั้งค่า seed)
 - **ข้อจำกัด**: มี under‑prediction ในยอดพีค, ไม่มีกรอบความเชื่อมั่น/ความเสี่ยง, การประเมินยังเป็น single split ไม่ใช่ rolling backtest
-- **คำแนะนำ**:
-  1) เทรนบน **log‑price** หรือ **returns** แล้วแปลงกลับ เพื่อลด heteroscedasticity ที่ระดับราคาสูง
-  2) ทำ **TimeSeriesSplit/rolling-origin evaluation** เพื่อวัดความเสถียรตามเวลา
-  3) สร้าง **prediction intervals** (เช่น quantile LSTM หรือ bootstrap) สำหรับการใช้งานจริง
-  4) ทดลอง **Ensemble/Stacking** (LSTM + XGBoost/LightGBM บนฟีเจอร์เทคนิคัล) เพื่อเก็บพีคให้ดีขึ้น
