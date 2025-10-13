@@ -1,4 +1,4 @@
-# รีวิวเชิงลึก DL_BERT.ipynb (ภาษาไทย)
+# รีวิวเชิงลึก DL_BERT.ipynb 
 
 > โฟกัส: งานจำแนกข้อความภาษาไทย 2 โจทย์ — **อารมณ์ความรู้สึก (3 คลาส)** และ **หัวข้อสนทนา (17 คลาส)** ด้วยโมเดลฐาน **WangchanBERTa** จาก AIResearch (`airesearch/wangchanberta-base-att-spm-uncased`).
 
