@@ -142,22 +142,7 @@ pip install xgboost scikit-learn pandas numpy matplotlib yfinance
 ```
 - ถ้าเป็น time-series: อย่า shuffle ขณะ split, และใช้ validation แบบเลื่อนหน้าต่างเวลา (walk-forward) เมื่อทำโมเดลจริง
 
----
 
-## 7) โครงสร้างรีโปที่แนะนำ
-```
-.
-├─ xgboost.ipynb
-├─ README.md
-└─ xgb_media/
-   ├─ xgb_fig_01_XGBoost-Forecast-vs-Actual.png
-   ├─ xgb_fig_02_XGBoost-Forecast-vs-Actual.png
-   ├─ (optional) xgb_fig_03_Feature-Importance.png
-   ├─ (optional) xgb_fig_04_Residuals.png
-   └─ (optional) xgb_fig_05_Actual-vs-Predicted-Scatter.png
-```
-
----
 
 ## 8) ข้อจำกัด & งานต่อยอด (Limitations & Next Steps)
 - **สัญญาณเชิงเวลา**: ลองเพิ่ม lag/rolling features เพื่อให้โมเดลเห็นบริบทมากขึ้น
@@ -165,4 +150,3 @@ pip install xgboost scikit-learn pandas numpy matplotlib yfinance
 - **Explainability**: เพิ่ม **Feature Importance/SHAP** เพื่อสื่อสารเหตุผลเชิงธุรกิจ
 - **Baseline เปรียบเทียบ**: เทียบกับ **ARIMA/LSTM** เพื่อชูจุดเด่นของ XGBoost
 
-_อัปเดตล่าสุด: 2025-10-07_
